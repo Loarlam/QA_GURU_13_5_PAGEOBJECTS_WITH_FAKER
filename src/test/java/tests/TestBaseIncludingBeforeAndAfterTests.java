@@ -18,7 +18,7 @@ public class TestBaseIncludingBeforeAndAfterTests {
     @AfterAll
     static void afterAllTest() throws InterruptedException {
         Configuration.holdBrowserOpen = true;
-        Thread.sleep(10000);
+        Thread.sleep(3000);
         Configuration.holdBrowserOpen = false;
     }
 }
