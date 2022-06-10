@@ -34,7 +34,6 @@ public class PageOfRegistrationForm {
     }
 
     public PageOfRegistrationForm settingFirstName(String userName) {
-
         name.setValue(userName);
         return this;
     }
@@ -54,8 +53,8 @@ public class PageOfRegistrationForm {
         return this;
     }
 
-    public PageOfRegistrationForm settingMobileNumber(long userMobileNumber) {
-        mobileNumber.setValue(String.format("%s", userMobileNumber));
+    public PageOfRegistrationForm settingMobileNumber(String userMobileNumber) {
+        mobileNumber.setValue(userMobileNumber);
         return this;
     }
 

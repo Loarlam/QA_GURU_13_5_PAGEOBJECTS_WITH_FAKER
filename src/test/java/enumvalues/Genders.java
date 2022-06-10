@@ -1,6 +1,6 @@
 package enumvalues;
 
-public enum Gender {
+public enum Genders {
     Male,
     Female,
     Other

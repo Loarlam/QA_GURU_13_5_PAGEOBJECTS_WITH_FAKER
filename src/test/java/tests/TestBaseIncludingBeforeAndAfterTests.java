@@ -7,6 +7,7 @@ import pages.PageOfRegistrationForm;
 public class TestBaseIncludingBeforeAndAfterTests {
 
     PageOfRegistrationForm pageOfRegistrationForm = new PageOfRegistrationForm();
+    DataForTheTest dataForTheTest = new DataForTheTest();
 
     @BeforeAll
     static void beforeAllTests() {
@@ -18,7 +19,7 @@ public class TestBaseIncludingBeforeAndAfterTests {
     @AfterAll
     static void afterAllTest() throws InterruptedException {
         Configuration.holdBrowserOpen = true;
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         Configuration.holdBrowserOpen = false;
     }
 }
