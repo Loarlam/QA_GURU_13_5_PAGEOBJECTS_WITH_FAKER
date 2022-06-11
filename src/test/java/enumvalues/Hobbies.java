@@ -1,7 +1,17 @@
 package enumvalues;
 
 public enum Hobbies {
-    Sports,
-    Reading,
-    Music
+    SPORTS("Sports"),
+    READING("Reading"),
+    MUSIC("Music");
+
+    private String name;
+
+    Hobbies(String nameOfSport) {
+        name = nameOfSport;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

@@ -1,7 +1,17 @@
 package enumvalues;
 
 public enum Genders {
-    Male,
-    Female,
-    Other
+    MALE("Male"),
+    FEMALE("Female"),
+    OTHER("Other");
+
+    private String name;
+
+    Genders(String nameOfGender) {
+        name = nameOfGender;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
